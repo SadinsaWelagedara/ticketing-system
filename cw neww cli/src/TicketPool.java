@@ -41,9 +41,7 @@ public class TicketPool {
             Ticket ticket = new Ticket(nextTicketId++, "Event", new BigDecimal("1000"));
             tickets.add(ticket);
         }
-        // If a Vendor thread is adding tickets, count how many are added in a batch
-//        if (Thread.currentThread().getName().startsWith("Vendor")) {
-        //int ticketsAdded = 4; // Assuming 4 tickets are always added in a batch
+        
         System.out.println(Thread.currentThread().getName() + " added " + batchSize + " tickets. Total tickets: " + tickets.size());
 
 
