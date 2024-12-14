@@ -10,7 +10,7 @@ public class Customer implements Runnable {
     @Override
     public void run() {
         while (true) {
-            //int batchSize= 2;
+            
             ticketPool.removeTickets(2);
 
 

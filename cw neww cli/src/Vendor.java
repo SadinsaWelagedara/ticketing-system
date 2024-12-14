@@ -9,7 +9,7 @@ public class Vendor implements Runnable {
 
     @Override
     public void run() {
-        //int ticketId = 1; // Initialize ticket ID
+
         while (true) {
              // Number of tickets to add in a batch
             ticketPool.addTickets(4);
